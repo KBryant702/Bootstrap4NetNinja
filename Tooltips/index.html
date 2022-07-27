@@ -89,32 +89,37 @@
 
     <h2 class="display-4 text-center py-5 my-4">Meet the Speakers</h2>
     <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
-      <!-- Need the active word for pills to show up  and data-toggle to get the pills to change which is active on click also need to add Id to pane-->
       <a class="nav-link active" href="#ninja" data-toggle="tab">The Net Ninja</a>
       <a class="nav-link" href="#wizard" data-toggle="tab">The Web Wizard</a>
       <a class="nav-link" href="#captain" data-toggle="tab">Captain Code</a>
       <a class="nav-link" href="#avenger" data-toggle="tab">Angular Avenger</a>
     </nav>
-    <!-- to display content when clicked on each pill-->
+
     <div class="tab-content py-5">
-      <!-- add id to the pane so bootstrap know which link and pane match-->
       <div class="tab-pane active" id="ninja">
         <h3>The Net Ninja</h3>
-        <p>In nibh mauris cursus mattis molestie. Nulla pharetra diam sit amet nisl. Ullamcorper eget nulla facilisi
+
+        <!-- Need data-toggle="tootip" for bootstrap to use the tooltip function in the script at the bottom
+        The title info is what is displayed by the tooltip when it is hovered over
+      data-placement changes where the tooltip appears. Default is top but botton left and right are also options -->
+        <p>In nibh mauris <span data-toggle="tooltip" title="This is a tooltip" class="text-info" data-placement="bottom">cursus mattis molestie.</span> Nulla pharetra diam sit amet nisl. Ullamcorper eget nulla facilisi
           etiam dignissim diam quis enim lobortis. Nulla pharetra diam sit amet. Sed vulputate mi sit amet. Nunc
           consequat interdum varius sit amet mattis vulputate.</p>
       </div>
+
       <div class="tab-pane" id="wizard">
         <h3>The Web Wizard</h3>
         <p>Tellus orci ac auctor augue. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. In iaculis nunc
           sed augue lacus. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Montes nascetur ridiculus
           mus mauris vitae ultricies leo.
       </div>
+
       <div class="tab-pane" id="captain">
         <h3>Captain Code</h3>
         <p>Tempus egestas sed sed risus pretium quam. Massa sed elementum tempus egestas sed sed. Massa eget egestas
           purus viverra accumsan in nisl. Eget magna fermentum iaculis eu non diam.</p>
       </div>
+
       <div class="tab-pane" id="avenger">
         <h3>Angular Avenger</h3>
         <p>Lectus urna duis convallis convallis tellus id interdum velit laoreet. Nulla malesuada pellentesque elit
@@ -126,16 +131,16 @@
   </div>
 
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+   <!-- jQuery first, then Tether, then Bootstrap JS. -->
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+   <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 </body>
 
 </html>
