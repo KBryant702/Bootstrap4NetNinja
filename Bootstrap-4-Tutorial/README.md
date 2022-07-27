@@ -1,6 +1,4 @@
-# bootstrap-4-playlist
-Course files for the Bootstrap 4 tutorial playlist from The Net Ninja.
+# bootstrap-4-Tutorial
+Coursework for the Bootstrap 4 tutorial from The Net Ninja.
+https://www.youtube.com/c/TheNetNinja
 
-Each branch in the repo corresponds to the end code to each video in the playlist.
-
-Enjoy :)
