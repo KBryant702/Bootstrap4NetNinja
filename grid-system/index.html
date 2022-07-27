@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.row div{padding:20px 10px; border:1px solid;}
+</style>
+  </head>
+  <body>
+
+ <div class="container">
+<!-- styling inline is not best practice just used to better differ the elements-->
+  <div class="row" style="background: lightblue">
+    <!-- col is column - sm is small screen size and upwards- # how many columns of width do you want element to be-->
+    <!-- md is medium-->
+<div class="col-sm-6">col-sm-6</div>
+<div class="col-sm-6">col-sm-6</div>
+
+<!-- Once this screen size gets to large, elements only take up 3 columns-->
+</div>
+<div class="row" style="background: pink">
+<div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+<div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+<div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+<div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+</div>
+
+<!-- when you don't specify the sizes of the screen the coolumn should react to-->
+<div class="row" style="background: yellow">
+  <div class="col-3">col</div>
+  <div class="col-3">col</div>
+  <div class="col-3">col</div>
+  <div class="col-3">col</div>
+  </div>
+ </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
